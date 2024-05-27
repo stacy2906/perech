@@ -1,0 +1,20 @@
+struct Book
+{
+    public string title;
+    public string author;
+    public int year;
+    public int pageCount;
+
+    public Book(string title, string author, int year, int pageCount)
+    {
+        this.title = title;
+        this.author = author;
+        this.year = year;
+        this.pageCount = pageCount;
+    }
+
+    public void DisplayInfo()
+    {
+        Console.WriteLine($"\nBook: {title}, Author: {author}, Year: {year}, Pages: {pageCount}");
+    }
+}
